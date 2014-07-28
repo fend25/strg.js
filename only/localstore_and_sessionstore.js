@@ -2,7 +2,6 @@ var localstore = {
   s: window.localStorage,
   type: 'localStorage',
   set: function(key, val) {
-    if (val === undefined) { return store.remove(key) }
     this.s.setItem(key, JSON.stringify(val));
     return val;
   },

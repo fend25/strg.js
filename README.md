@@ -3,7 +3,7 @@ Simple localStorage, sessionStorage and cookie operating library with the single
 #### Getting started
 Just download file and include it in your HTML document: `<script src="strg.min.js"></script>`<br>
 You can use any set of localStorage, sessionStorage or cookie wrappers, all files are in the `/only` folder.
-Also, if you use one of modern browsers which support localStorage, the easiest way is to use just localStorage wrapper, **or simply copy it to one of your JS files. It takes only [25 lines and contains ready and useful code.](https://github.com/fend25/strg.js/blob/master/only/localstore.js)** You can remove some functions from `localstore` object if you don't need them, or add some. Use, code and enjoy!
+Also, if you use one of modern browsers which support localStorage, the easiest way is to use just localStorage wrapper, **or simply copy it to one of your JS files. It takes only [24 lines and contains ready and useful code.](https://github.com/fend25/strg.js/blob/master/only/localstore.js)** You can remove some functions from `localstore` object if you don't need them, or add some. Use, code and enjoy!
 #### API
 So, the `strg.js` containts three objects with single API:<br>
 `localstore` - localStorage wrapper<br>
