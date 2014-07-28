@@ -5,7 +5,7 @@ Just download file and include it in your HTML document: `<script src="strg.min.
 You can use any set of localStorage, sessionStorage or cookie wrappers, all files are in the `/only` folder.
 Also, if you use one of modern browsers which support localStorage, the easiest way is to use just localStorage wrapper, **or simply copy it to one of your JS files. It takes only [24 lines and contains ready and useful code.](https://github.com/fend25/strg.js/blob/master/only/localstore.js)** You can remove some functions from `localstore` object if you don't need them, or add some. Use, code and enjoy!
 #### API
-So, the `strg.js` containts three objects with single API:<br>
+So, the `strg.js` contains three objects with single API:<br>
 `localstore` - localStorage wrapper<br>
 `sessionstore` - sessionStorage wrapper<br>
 `cookielstore` - cookie wrapper<br>
@@ -22,22 +22,24 @@ In case of `cookiestore`, function `set` takes five params: key, value, expires,
 `expires`: Date, number or string, that can be used in `Date` constructor<br>
 `path`: string, path for cookie<br>
 `secure`: bool, secure flag for cookie<br>
-Also, all objects contains two additional fields:<br>
-`s`: storage object or document.cookie, for example: `window.localStorage`<br>
+Also, all objects contain two additional fields:<br>
+`s`: _Storage_ object or _document.cookie_, for example: `window.localStorage`<br>
 `type`: string, storage type, for example `'localStorage'`
 #### Examples
 ```javascript
 store.set('a', 1); // 1
 store.set('b', {c: [1, '2', {d: 3}]})); // {"c":[1,"2",{"d":3}]}
 store.getAll(); // {"a":1,"b":{"c":[1,"2",{"d":3}]}}
+
 store.set('c', 'some string'); // "some string"
 store.remove('b'); // undefined
 store.getAll(); // {"a":1,"c":"some string"}
+
 store.removeAll(); // undefined
 store.getAll(); // {}
 ```
 #### Tests
 `/test/test.html`
-Tests are made with simple and useful framework - [Angular Light](http://angularlight.org/). Even if you don't need this right now, just take a look - it worths it. Actually it is Angular in JS-way: no factories, services and so on. Just write less, do more, have fun and forget about jQuery with very simple and clear code.
+Tests are made with simple and useful framework - [Angular Light](http://angularlight.org/). Even if you don't need this right now, just take a look - it's worth it. Actually it is Angular in JS-way: no factories, services and so on. Just write less, do more, have fun and forget about jQuery with very simple and clear code.
 #### License
 MIT
