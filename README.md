@@ -8,7 +8,7 @@ Also, if you use one of modern browsers which support localStorage, the easiest 
 So, the `strg.js` contains three objects with single API:<br>
 `localstore` - localStorage wrapper<br>
 `sessionstore` - sessionStorage wrapper<br>
-`cookielstore` - cookie wrapper<br>
+`cookiestore` - cookie wrapper<br>
 and the fourth object `store`, that use localStorage if it's supported or cookies otherwise.
 
 Each of them has 5 functions:<br>
